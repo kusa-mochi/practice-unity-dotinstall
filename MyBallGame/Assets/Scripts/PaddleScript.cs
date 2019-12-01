@@ -14,6 +14,6 @@ public class PaddleScript : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
-        Debug.Log(transform.position.x);
+        //Debug.Log(transform.position.x);
     }
 }
