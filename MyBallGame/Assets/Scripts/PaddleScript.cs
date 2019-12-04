@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class PaddleScript : MonoBehaviour
 {
+    public float speed;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        //_speed = 5f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+        transform.position += new Vector3(Input.GetAxis("Horizontal") * Time.deltaTime * speed, 0f, 0f);
         //Debug.Log(transform.position.x);
     }
+
+    //private float _speed;
 }
